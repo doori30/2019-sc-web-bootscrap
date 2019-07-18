@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FORM</title>
+	<link rel="stylesheet" href="../css/fa.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/base-bootscrap.css">
+
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+
+</head>
+<!-- 
+	form-group => label과 form-element(input 등)을 감싸는 element
+	form-control => form element(input 등)가 원래 가지고 있는                     속성인 display:inline-block 속성을 
+	                block으로 바꿔주고,이쁘게 만들어 주고, width:100%를 적용해준다.
+	form-inline => 보통 formtag에 적용하며, 
+	               form-control이 적용되어 display:block인 요소들을 display:inline-block으로 바꿔준다.
+ -->
+<body>
+	<input type="checkbox" name="hobby" id="hobby">
+	<label for="id">Text</label>
+	<div class="container">
+		<div class="border p-3 my-3">
+			<div class="alert alert-dark">
+			<h4>
+				<i class="fas fa-edit"> </i>회원가입 
+				<small>소중한 회원으로 모십니다.</small>
+			</h4>
+			</div>
+			<input type="text" class="form-control">
+			<input type="text" class="form-control">
+			<input type="text" class="form-control">
+
+		<form action="#" class="was-validated">
+			<ul class="list-group">
+				<li class="list-group-item my-3">
+					<div class="form-group row ailgn-items-center">
+						<label for="userid" class="col-12 col-md-2">아이디:</label>
+							<div div class="col-12 col-md-10">
+								<input type="text" class="form-control" name="userid" id="userid" placeholder="아이디를 입력하세요."required>
+							<div class="valid-feedback">사용가능합니다.</div>
+							<div class="invalid-feedback">아이디를 입력하세요.</div>
+						</div>
+					</div>
+				</li>
+			
+				<li class="list-group-item my-3">
+					<div class="form-group row ailgn-items-center">
+						<div class="col-12 col-md-2">이름:</div>
+						<div class="col-12 col-md-10">
+							<input type="text" class="form-control" name="username" id="username" placeholder="이름을 입력하세요."required>
+							<div class="valid-feedback">사용가능합니다.</div>
+							<div class="invalid-feedback">아이디를 입력하세요.</div>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item">
+						<div class="form-group row align-items-center">
+							<label for="cmt" class="col-12 col-md-2">
+								남기실 말:
+							</label>
+							<div class="col-12 col-md-10">
+								<textarea class="form-control w-100" name="cmt" id="cmt" rows="10"
+								placeholder="남기실 말을 작성해 주세요" required></textarea>
+								<div class="valid-feedback">사용가능합니다.</div>
+								<div class="invalid-feedback">입력해주세요.</div>
+							</div>
+						</div>
+					</li>
+			</ul>
+			<div class="p-3 text-center">
+				<button type="submit" class="btn btn-primary">가입</button>
+				<button type="button" class="btn btn-danger">다시작성</button>
+			</div>
+		</form>
+	</div>
+	<div class="border p-3my-3">
+			<form action="/action_page.php" class="was-validated">
+				<div class="form-group">
+					<label for="uname">Username:</label>
+					<input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+					<div class="valid-feedback">Valid.</div>
+					<div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+				<div class="form-group">
+					<label for="pwd">Password:</label>
+					<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+					<div class="valid-feedback">Valid.</div>
+					<div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+				<div class="form-group form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+						<div class="valid-feedback">Valid.</div>
+						<div class="invalid-feedback">Check this checkbox to continue.</div>
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+	</div>
+</div><!--container-->
+	<!-- <div class="row">
+				<div class="col-12 col-md-3">아이디;</div>
+				<div class="col-12 col-md-9">
+					<input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요.">
+				</div>
+			</div> -->
+	<!-- <div class="row">
+		<div class="border border-dark p-3 col-12 col-md-4 col-lg-2"></div>
+		<div class="border border-dark p-3 col-12 col-md-4 col-lg-2"></div>
+		<div class="border border-dark p-3 col-12 col-md-4 col-lg-2"></div>
+	</div> -->
+</body>
+
+</html>
